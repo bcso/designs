@@ -14,10 +14,10 @@ Features
 Below is how each functionality in the game will work. Front End will handle all state in `gameState` react state which will be flushed to storage by user choice. Data will be loaded into `gameState` on resume.
 
 ## Components
-- TicTacToe [ct]
-  - GameBoard [ct]
+- PageBaseLayout [cmpt]
+  - GameBoard [cmpt]
     - state: produces gameState (Lifted)
-  - MoveHistory [ct]
+  - MoveHistory [cmpt]
     - state: consumes gameState (from GameBoard)
     - flushes gameState to storage
 
