@@ -13,6 +13,14 @@ Features
 
 Below is how each functionality in the game will work. Front End will handle all state in `gameState` react state which will be flushed to storage by user choice. Data will be loaded into `gameState` on resume.
 
+## Components
+- TicTacToe [ct]
+  - GameBoard [ct]
+    - state: produces gameState (Lifted)
+  - MoveHistory [ct]
+    - state: consumes gameState (from GameBoard)
+    - flushes gameState to storage
+
 ### Playing the Game
 Front end will allow the two players to make their moves and update the `gameState.boardState` object, which is simply the react State.
 
